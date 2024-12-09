@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dungeons & Dragons</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenido</h1>
+            <nav>
+                <ul>
+                    <li><a href="#¿qué es d&d?">Qué es d&d</a></li>
+                    <li><a href="#reglas">Reglas Básicas</a></li>
+                    <li><a href="#clases">Clases</a></li>
+                    <li><a href="#formulario">Formulario</a></li>
+                    <li><a href="#mapa">Mapa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--Bienvenida -->
+    <section id="bienvenida" class="section">
+        <div class="container">
+            <h2>¿Qué es Dungeons & Dragons?</h2>
+            <p>Dungeons & Dragons (D&D) es un juego de rol en el que los jugadores asumen el papel de personajes ficticios y se embarcan en aventuras épicas guiadas por un narrador llamado el Dungeon Master (DM).</p>
+            <p>Aunque normalmente d&d es un juego de mesa fisico , existe una plataforma en la cual se puede jugar en grupo via discord o en llamada , esta se llama Nivel20</p>
+            <img src="dragones.jpg" alt="dragones" class="image">
+        </div>
+    </section>
+
+    <!-- Reglas -->
+    <section id="reglas" class="section">
+        <div class="container">
+            <h2>Reglas Básicas</h2>
+            <ul>
+                <li>D&D es un juego por turnos , este se decide por los stats del personaje mas una tirada de dado(usualmente d6).</li>
+                <li>Los jugadores lanzan dados , estos definen si aciertan o fallan la accion , ademas de cuanto daño/ que tan bien sale.</li>
+                <li>Los personajes tienen atributos que se eligen por raza o por transfondo , como por ejemplo : Fuerza, Destreza, Constitución, Inteligencia y Carisma.</li>
+                <li>El Dungeon Master empieza la historia y la dirige para su gusto , este usualmente pone la dificultad de la aventura o batalla.</li>
+            </ul>
+            <!-- Tabla -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Acción</th>
+                        <th>Descripción</th>
+                        <th>Dados necesarios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ataque</td>
+                        <td>Daño o estado negativo</td>
+                        <td>1d6</td>
+                    </tr>
+                    <tr>
+                        <td>Defensa</td>
+                        <td>Reduccion de daño o estados defensivos como aumentar defensa o invisibilidad</td>
+                        <td>1d20</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="dnd_welcome_dice_3.png" alt="dados" class="image" style="width: 400px; height: 600px;">
+        </div>
+    </section>
+
+    <!-- Clases -->
+    <section id="clases" class="section">
+        <div class="container">
+            <h2>Clases de Personajes</h2>
+            <ul>
+                <li>Bárbaro</li>
+                <li>Bardo</li>
+                <li>Brujo</li>
+                <li>Clérigo</li>
+                <li>Druida</li>
+                <li>Explorador</li>
+                <li>Guerrero</li>
+                <li>Hechicero</li>
+                <li>Mago</li>
+                <li>Monje</li>
+                <li>Paladin</li>
+                <li>Picaro</li>
+            </ul>
+            <!-- Video -->
+            <iframe width="400" height="290" src="https://www.youtube.com/embed/jIqR7PmqY_o" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="formulario" class="section">
+        <div class="container">
+            <h2>Formulario de Registro</h2>
+            <form action="" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+                
+                <label for="personaje">Clase de Personaje:</label>
+                <input type="radio" id="barbaro" name="clase" value="Bárbaro" required> Bárbaro
+                <input type="radio" id="bardo" name="clase" value="Bardo"> Bardo
+                <input type="radio" id="brujo" name="clase" value="Brujo" required> Brujo
+                <input type="radio" id="clerigo" name="clase" value="Clérigo" required> Clérigo
+                <input type="radio" id="druida" name="clase" value="Druida" required> Druida
+                <input type="radio" id="explorador" name="clase" value="Explorador" required>Explorador
+                <input type="radio" id="guerrero" name="clase" value="Guerrero" required>Guerrero
+                <input type="radio" id="hechicero" name="clase" value="Hechicero" required>Hechicero
+                <input type="radio" id="mago" name="clase" value="Mago" required>Mago
+                <input type="radio" id="monje" name="clase" value="Monje" required>Monje
+                <input type="radio" id="paladin" name="clase" value="Paladin" required>Paladin
+                <input type="radio" id="picaro" name="clase" value="Pícaro" required>Pícaro
+
+                
+                <label for="habilidades">Habilidades Especiales:</label>
+                <input type="checkbox" id="habilidad1" name="habilidad1" value="Magia"> Magia
+                <input type="checkbox" id="habilidad2" name="habilidad2" value="Sigilo"> Sigilo
+                <input type="checkbox" id="habilidad3" name="habilidad3" value="Artes Marciales"> Artes Marciales
+                <input type="checkbox" id="habilidad4" name="habilidad4" value="Canto"> Canto
+                <input type="checkbox" id="habilidad5" name="habilidad5" value="Hablar con los animales"> Hablar con los animales
+            </form>
+        </div>
+    </section>
+
+    <!-- Maps -->
+    <section id="mapa" class="section">
+        <div class="container">
+            <h2>Tienda en malaga con cosas para jugar d&d</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.24952800562!2d-4.4289574!3d36.7210503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79806ed4993:0x6271ae99fdef1246!2sEl+Reino+Friki!5e0!3m2!1ses!2ses!4v1601234567890" width="470" height="470" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; David Serrano Rodríguez</p>
+        </div>
+    </footer>
+</body>
+</html>
